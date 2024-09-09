@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/survey-form.css" rel="styles" />
+    <link href="css/survey-form.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -11,15 +11,15 @@
       <header>
         <h1 id="title">Developer Survey 2024</h1>
         <p id="description">
-          a short survey for programming languages and frameworks libraries etc.
+          a short survey for programming languages and frameworks
         </p>
       </header>
       <form id="survey-form">
         <div class="forms">
-          <label id="username" for="username">Name</label>
+          <label id="name-label" for="name">Name</label>
           <input
-            id="username"
-            name="username"
+            id="name"
+            name="name"
             type="text"
             class="inner-form"
             placeholder="Enter your name"
@@ -27,7 +27,7 @@
           />
         </div>
         <div class="forms">
-          <label id="email" for="email">Email</label>
+          <label id="email-label" for="email">Email</label>
           <input
             id="email"
             name="email"
@@ -38,9 +38,9 @@
           />
         </div>
         <div class="forms">
-          <label id="age" for="age">Age</label>
+          <label id="number-label" for="number">Age</label>
           <input
-            id="age"
+            id="number"
             name="age"
             type="text"
             class="inner-form"
@@ -49,7 +49,7 @@
         </div>
         <div class="forms">
           <p>Which programming language do you prefer</p>
-          <select id="dropdownmenu" name="dropdownmenu" class="forms" required>
+          <select id="dropdown" name="dropdown" class="forms" required>
             <option value="" disabled selected>Choose a languange</option>
             <option value="htmlcss">HTML/CSS</option>
             <option value="python">Python</option>
@@ -102,11 +102,73 @@
           <label
             ><input
               name="choice"
-              value="spring"
+              value="react"
               type="checkbox"
               class="checkbox"
-            />Spring
+            />React
           </label>
+          <label
+            ><input
+              name="choice"
+              value="node"
+              type="checkbox"
+              class="checkbox"
+            />Node.js
+          </label>
+          <label
+            ><input
+              name="choice"
+              value="angular"
+              type="checkbox"
+              class="checkbox"
+            />Angular
+          </label>
+          <label
+            ><input
+              name="choice"
+              value="flask"
+              type="checkbox"
+              class="checkbox"
+            />Flask
+          </label>
+          <label
+            ><input
+              name="choice"
+              value="django"
+              type="checkbox"
+              class="checkbox"
+            />Django
+          </label>
+          <label
+            ><input
+              name="choice"
+              value="springboot"
+              type="checkbox"
+              class="checkbox"
+            />Spring Boot
+          </label>
+          <label
+            ><input
+              name="choice"
+              value="lavarel"
+              type="checkbox"
+              class="checkbox"
+            />Lavarel
+          </label>
+        </div>
+        <div class="forms">
+          <p>Any comments or suggestions?</p>
+          <label>
+            <textarea
+              id="text"
+              class="text"
+              name="text"
+              placeholder="Enter your comments here..."
+            ></textarea>
+          </label>
+        </div>
+        <div class="forms">
+          <button id="submit" type="submit">Submit</button>
         </div>
       </form>
     </div>
