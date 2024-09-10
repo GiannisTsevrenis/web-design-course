@@ -73,3 +73,25 @@ label {
   transform: scale(1.5);
   margin: 10px;
 }
+label > textarea {
+  display: block;
+  width: 100%;
+  min-width: 600px;
+  min-height: 120px;
+}
+.submitbtn {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  background-color: #46ad2a;
+  border-radius: 8px;
+}
+button {
+  color: white;
+  font-size: larger;
+  /* Add transition for smooth hover effects */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+  transform: scale(1.01);
+}

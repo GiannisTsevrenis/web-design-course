@@ -40,9 +40,11 @@
         <div class="forms">
           <label id="number-label" for="number">Age</label>
           <input
+            min="15"
+            max="200"
             id="number"
             name="age"
-            type="text"
+            type="number"
             class="inner-form"
             placeholder="Enter your age"
           />
@@ -171,7 +173,7 @@
           </label>
         </div>
         <div class="forms">
-          <button id="submit" type="submit">Submit</button>
+          <button id="submit" type="submit" class="submitbtn">Submit</button>
         </div>
       </form>
     </div>
