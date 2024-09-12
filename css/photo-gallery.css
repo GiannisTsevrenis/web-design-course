@@ -37,6 +37,15 @@ body {
   border-radius: 10px;
 }
 
+ul li {
+  color: #3b0dad;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 10px;
+}
 /* .gallery::after {
   content: "";
   width: 350px;
