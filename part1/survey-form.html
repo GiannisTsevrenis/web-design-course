@@ -1,181 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/survey-form.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1 id="title">Developer Survey 2024</h1>
-        <p id="description">
-          a short survey for programming languages and frameworks
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./survey-form.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Developer Survey 2024</h1>
+      <p id="description">
+        a short survey for programming languages and frameworks
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="forms">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text" class="inner-form" placeholder="Enter your name" required />
+      </div>
+      <div class="forms">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" class="inner-form" placeholder="Enter your email" required />
+      </div>
+      <div class="forms">
+        <label id="number-label" for="number">Age</label>
+        <input min="15" max="200" id="number" name="age" type="number" class="inner-form"
+          placeholder="Enter your age" />
+      </div>
+      <div class="forms">
+        <p id="largerfont">Which programming language do you prefer?</p>
+        <select id="dropdown" name="dropdown" class="forms" required>
+          <option value="" disabled selected>Choose a languange</option>
+          <option value="htmlcss">HTML/CSS</option>
+          <option value="python">Python</option>
+          <option value="sql">SQL</option>
+          <option value="java">Java</option>
+          <option value="csharp">C#</option>
+        </select>
+      </div>
+      <div class="forms">
+        <p id="largerfont">Web Development Category of choice</p>
+        <label id="radio">
+          <input name="webdev" value="frontend" type="radio" class="radio" checked />Front-End
+        </label>
+        <label id="radio">
+          <input name="webdev" value="backend" type="radio" class="radio" />Back-End
+        </label>
+        <label id="radio">
+          <input name="webdev" value="fullstack" type="radio" class="radio" />Full-Stack
+        </label>
+      </div>
+      <div class="forms">
+        <p id="largerfont">Favorite activity</p>
+        <select id="favorites" name="favorites" class="forms" required>
+          <option value="" disabled selected>Choose an option</option>
+          <option value="web">Web Applications</option>
+          <option value="ai">Artificial intelligence development</option>
+          <option value="db">Database development</option>
+          <option value="programs">Programs and applications</option>
+          <option value="videogame">Video game development</option>
+        </select>
+      </div>
+      <div class="forms">
+        <p id="largerfont">
+          Which technologies have you worked on?
+          <span class="small-italic">(check all that apply)</span>
         </p>
-      </header>
-      <form id="survey-form">
-        <div class="forms">
-          <label id="name-label" for="name">Name</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            class="inner-form"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div class="forms">
-          <label id="email-label" for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            class="inner-form"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
-        <div class="forms">
-          <label id="number-label" for="number">Age</label>
-          <input
-            min="15"
-            max="200"
-            id="number"
-            name="age"
-            type="number"
-            class="inner-form"
-            placeholder="Enter your age"
-          />
-        </div>
-        <div class="forms">
-          <p id="largerfont">Which programming language do you prefer?</p>
-          <select id="dropdown" name="dropdown" class="forms" required>
-            <option value="" disabled selected>Choose a languange</option>
-            <option value="htmlcss">HTML/CSS</option>
-            <option value="python">Python</option>
-            <option value="sql">SQL</option>
-            <option value="java">Java</option>
-            <option value="csharp">C#</option>
-          </select>
-        </div>
-        <div class="forms">
-          <p id="largerfont">Web Development Category of choice</p>
-          <label id="radio">
-            <input
-              name="webdev"
-              value="frontend"
-              type="radio"
-              class="radio"
-              checked
-            />Front-End
-          </label>
-          <label id="radio">
-            <input
-              name="webdev"
-              value="backend"
-              type="radio"
-              class="radio"
-            />Back-End
-          </label>
-          <label id="radio">
-            <input
-              name="webdev"
-              value="fullstack"
-              type="radio"
-              class="radio"
-            />Full-Stack
-          </label>
-        </div>
-        <div class="forms">
-          <p id="largerfont">Favorite activity</p>
-          <select id="favorites" name="favorites" class="forms" required>
-            <option value="" disabled selected>Choose an option</option>
-            <option value="web">Web Applications</option>
-            <option value="ai">Artificial intelligence development</option>
-            <option value="db">Database development</option>
-            <option value="programs">Programs and applications</option>
-            <option value="videogame">Video game development</option>
-          </select>
-        </div>
-        <div class="forms">
-          <p id="largerfont">
-            Which technologies have you worked on?
-            <span class="small-italic">(check all that apply)</span>
-          </p>
-          <label
-            ><input
-              name="choice"
-              value="react"
-              type="checkbox"
-              class="checkbox"
-            />React
-          </label>
-          <label
-            ><input
-              name="choice"
-              value="node"
-              type="checkbox"
-              class="checkbox"
-            />Node.js
-          </label>
-          <label
-            ><input
-              name="choice"
-              value="angular"
-              type="checkbox"
-              class="checkbox"
-            />Angular
-          </label>
-          <label
-            ><input
-              name="choice"
-              value="flask"
-              type="checkbox"
-              class="checkbox"
-            />Flask
-          </label>
-          <label
-            ><input
-              name="choice"
-              value="django"
-              type="checkbox"
-              class="checkbox"
-            />Django
-          </label>
-          <label
-            ><input
-              name="choice"
-              value="springboot"
-              type="checkbox"
-              class="checkbox"
-            />Spring Boot
-          </label>
-          <label
-            ><input
-              name="choice"
-              value="lavarel"
-              type="checkbox"
-              class="checkbox"
-            />Lavarel
-          </label>
-        </div>
-        <div class="forms">
-          <p id="largerfont">Any comments or suggestions?</p>
-          <label>
-            <textarea
-              id="text"
-              class="text"
-              name="text"
-              placeholder="Enter your comments here..."
-            ></textarea>
-          </label>
-        </div>
-        <div class="forms">
-          <button id="submit" type="submit" class="submitbtn">Submit</button>
-        </div>
-      </form>
-    </div>
-  </body>
+        <label><input name="choice" value="react" type="checkbox" class="checkbox" />React
+        </label>
+        <label><input name="choice" value="node" type="checkbox" class="checkbox" />Node.js
+        </label>
+        <label><input name="choice" value="angular" type="checkbox" class="checkbox" />Angular
+        </label>
+        <label><input name="choice" value="flask" type="checkbox" class="checkbox" />Flask
+        </label>
+        <label><input name="choice" value="django" type="checkbox" class="checkbox" />Django
+        </label>
+        <label><input name="choice" value="springboot" type="checkbox" class="checkbox" />Spring Boot
+        </label>
+        <label><input name="choice" value="lavarel" type="checkbox" class="checkbox" />Lavarel
+        </label>
+      </div>
+      <div class="forms">
+        <p id="largerfont">Any comments or suggestions?</p>
+        <label>
+          <textarea id="text" class="text" name="text" placeholder="Enter your comments here..."></textarea>
+        </label>
+      </div>
+      <div class="forms">
+        <button id="submit" type="submit" class="submitbtn">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
